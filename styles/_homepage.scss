@@ -24,7 +24,7 @@ nav {
 
 section {
   min-height: 92vh;
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 .landing {
@@ -36,11 +36,11 @@ section {
     flex: 1 1 40rem;
     h1,
     h4 {
-      width: 675px;
+      width: 600px;
     }
   }
   .landing-img {
-    flex: 1 1 60rem;
+    flex: 1 1 40rem;
     display: flex;
     justify-content: center;
     svg {
@@ -81,6 +81,12 @@ section {
     flex: 1 1 40rem;
     max-width: 510px;
     margin: 3rem;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 3rem;
+    }
     a {
       display: block;
       width: 275px;
@@ -90,6 +96,56 @@ section {
       text-align: center;
       border-radius: 1rem;
       font-size: 2.8rem;
+      padding-top: 1.8rem;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    div {
+      padding: 1rem;
+    }
+    input,
+    textarea {
+      font-size: 1.6rem;
+      color: $textcolor;
+      background: $accent2;
+      font-family: "Montserrat", sans-serif;
+      border: 1px rgba($color: #000000, $alpha: 0.2) solid;
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+    input {
+      font-size: 1.6rem;
+      color: $textcolor;
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      font-size: 1.6rem;
+      font-family: "Montserrat", sans-serif;
+      border: 0.5px solid black;
+      background-color: $ctacolor;
+      padding: 1.5rem 5rem;
+      text-align: center;
+      border-radius: 1rem;
+    }
+    button:hover {
+      cursor: pointer;
+      background-color: rgba($color: #888888, $alpha: 0.5);
+    }
+    .submit-button {
+      display: flex;
+      justify-content: center;
     }
   }
 }

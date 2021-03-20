@@ -1,0 +1,14 @@
+@keyframes blink {
+  from {
+    fill: $ctacolor;
+    background-color: $ctacolor;
+  }
+  to {
+    fill: $orange;
+    background-color: $orange;
+  }
+}
+
+#square1 {
+  animation: blink 1s ease infinite alternate forwards;
+}

@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #2d2d2d;
+  color: #d9d4d2;
+  position: relative;
+}
+
+h1 {
+  font-size: 6.7rem;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 3.8rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+p,
+a,
+li {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+#logo {
+  font-size: 6.7rem;
+  font-family: "Abril Fatface";
+}
+
+a {
+  text-decoration: none;
+  color: #d9d4d2;
+}
+
+nav {
+  min-height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #2d2d2d;
+}
+
+.burger {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 47px;
+}
+
+.burger span {
+  width: 4.7rem;
+  height: 0.4rem;
+  background: #d9d4d2;
+}
+
+section {
+  min-height: 92vh;
+  width: 85%;
+  margin: auto;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.landing .landing-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.landing .landing-text h1,
+.landing .landing-text h4 {
+  width: 600px;
+}
+
+.landing .landing-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing .landing-img svg {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 3rem;
+}
+
+.audio-samples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.audio-samples .audio-samples-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.audio-samples .audio-player {
+  height: 600px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bio .bio-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+}
+
+.bio .bio-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  max-width: 510px;
+  margin: 3rem;
+}
+
+.bio .bio-text h2 {
+  margin-bottom: 1rem;
+}
+
+.bio .bio-text p {
+  margin-bottom: 3rem;
+}
+
+.bio .bio-text a {
+  display: block;
+  width: 275px;
+  height: 60px;
+  background: #ffdea9;
+  color: #2d2d2d;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 2.8rem;
+  padding-top: 1.8rem;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+}
+
+.contact .form-wrapper div {
+  padding: 1rem;
+}
+
+.contact .form-wrapper input,
+.contact .form-wrapper textarea {
+  font-size: 1.6rem;
+  color: #d9d4d2;
+  background: #8c8c8c;
+  font-family: "Montserrat", sans-serif;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.contact .form-wrapper input {
+  font-size: 1.6rem;
+  color: #d9d4d2;
+  width: 100%;
+}
+
+.contact .form-wrapper button {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  border: 0.5px solid black;
+  background-color: #ffdea9;
+  padding: 1.5rem 5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.contact .form-wrapper button:hover {
+  cursor: pointer;
+  background-color: rgba(136, 136, 136, 0.5);
+}
+
+.contact .form-wrapper .submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes flash {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes flash {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.landing-text {
+  -webkit-animation: flash, 2s, ease;
+          animation: flash, 2s, ease;
+}
+/*# sourceMappingURL=style.css.map */
