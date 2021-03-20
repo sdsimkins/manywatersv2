@@ -1,5 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: $bgcolor;
+  color: $textcolor;
+  position: relative;
+}
+
+h1 {
+  font-size: 6.7rem;
+}
+h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 3.8rem;
+  font-weight: 400;
+}
+h4 {
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  font-weight: 400;
+}
+h5 {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+p,
+a,
+li {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+#logo {
+  font-size: 6.7rem;
+  font-family: "Abril Fatface";
+}
+a {
+  text-decoration: none;
   color: $textcolor;
 }
