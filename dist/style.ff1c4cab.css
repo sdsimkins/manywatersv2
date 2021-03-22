@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,7 +49,7 @@ li {
 }
 
 #logo {
-  font-size: 6.7rem;
+  font-size: 5rem;
   font-family: "Abril Fatface";
 }
 
@@ -69,17 +70,67 @@ nav {
 
 .burger {
   position: absolute;
-  top: 30%;
+  top: 25%;
   right: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 47px;
+  z-index: 2;
+  cursor: pointer;
 }
-.burger span {
+.burger .line {
   width: 4.7rem;
-  height: 0.4rem;
+  height: 0.3rem;
   background: #d9d4d2;
+  margin: 10px;
+}
+.burger div {
+  transition: all 0.5s ease;
+}
+
+.burger-open .line1 {
+  transform: rotate(-45deg) translate(0px, 17px);
+}
+.burger-open .line2 {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.burger-open .line3 {
+  transform: rotate(45deg) translate(0px, -17px);
+}
+
+.menu {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(100px at 90% -10%);
+  transition: all 1s ease-out;
+  z-index: 1;
+  pointer-events: none;
+}
+.menu li {
+  list-style: none;
+  text-align: center;
+  padding: 5rem;
+}
+.menu li a {
+  font-size: 6.7rem;
+}
+.menu li .book-button-contact {
+  font-size: 2.8rem;
+  background-color: #ffdea9;
+  color: #2d2d2d;
+  padding: 1.2rem 5.5rem;
+  border-radius: 10px;
+}
+
+.menu.open {
+  clip-path: circle(1600px at 90% -10%);
+  -webkit-clip-path: circle(1600px at 90% -10%);
+  pointer-events: all;
 }
 
 section {
@@ -213,17 +264,18 @@ section {
 }
 
 @keyframes blink {
-  from {
+  0% {
     fill: #ffdea9;
     background-color: #ffdea9;
   }
-  to {
+  10% {
     fill: #ff803c;
     background-color: #ff803c;
   }
-}
-#square1 {
-  animation: blink 1s ease infinite alternate forwards;
+  100% {
+    fill: #ff803c;
+    background-color: #ff803c;
+  }
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

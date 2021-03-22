@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +43,7 @@ li {
   line-height: 2.4rem;
 }
 #logo {
-  font-size: 6.7rem;
+  font-size: 5rem;
   font-family: "Abril Fatface";
 }
 a {

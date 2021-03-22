@@ -13,11 +13,19 @@
     <nav class="nav-bar">
         <h1 id="logo">Manywaters</h1>
         <div class="burger">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
         </div>
     </nav>
+    <section class="menu">
+        <ul>
+            <li><a href="#">Bandcamp</a></li>
+            <li><a href="#">Spotify</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#contact1" class="book-button-contact">Book Now</a></li>
+        </ul>
+    </section>
     <section class="landing">
         <div class="landing-text">
             <h1>Ambient beeps and boops for your next idea</h1>
@@ -79,15 +87,21 @@
                 </svg>                
         </div>
         <div class="audio-player">
-            <audio controls="">
-                <source src="/track1.d3ace391.wav" type="audio/wav">
-            </audio>
-            <audio controls="">
-                <source src="/track2.81675c08.wav" type="audio/wav">
-            </audio>
-            <audio controls="">
-                <source src="/track3.afe079a1.wav" type="audio/wav">
-            </audio>
+            <div class="track">
+                <audio>
+                    <source src="/track1.d3ace391.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="track">
+                <audio>
+                    <source src="/track2.81675c08.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="track">
+                <audio>
+                    <source src="/track3.afe079a1.wav" type="audio/wav">
+                </audio>
+            </div>
         </div>
     </section>
     <section class="bio">
@@ -129,5 +143,6 @@
         </div>
     </section>
     <script src="/app.c3f9f951.js"></script>
+    <script src="/audio.290a92e9.js"></script>
 </body>
 </html>
