@@ -6,6 +6,7 @@ nav {
   position: sticky;
   top: 0;
   background: $bgcolor;
+  z-index: 1;
 }
 
 .burger {
@@ -126,10 +127,14 @@ section {
       width: 636px;
       background: $accent1;
       border-radius: 10px;
-      img {
+      button {
         width: 50px;
-        padding-left: 10px;
+        height: 50px;
+        background: none;
+        border: none;
+        padding: 0rem 2rem;
         cursor: pointer;
+        z-index: 0;
       }
       .slider {
         width: 85%;
@@ -137,6 +142,12 @@ section {
       }
     }
   }
+  .fa-play,
+  .fa-pause {
+    scale: 3.5;
+    color: $textcolor;
+  }
+
   input[type="range"] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
     width: 100%; /* Specific width is required for Firefox. */

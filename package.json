@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "fontawesome": "^5.6.3"
   }
 }
