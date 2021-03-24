@@ -118,54 +118,75 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/audio.js":[function(require,module,exports) {
-var playBtn1 = document.querySelector(".play-btn1");
-var playIcon1 = document.querySelector(".play-btn1 i");
+var playBtn1 = document.getElementById("play-btn1");
+var playIcon1 = document.querySelector(".play-btn1");
+var slider1 = document.querySelector(".slider1");
 var song1 = document.querySelector(".audio1");
-var playBtn2 = document.querySelector(".play-btn2");
-var playIcon2 = document.querySelector(".play-btn2 i");
+var playBtn2 = document.getElementById("play-btn2");
+var playIcon2 = document.querySelector(".play-btn2");
+var slider2 = document.querySelector(".slider2");
 var song2 = document.querySelector(".audio2");
-var playBtn3 = document.querySelector(".play-btn3");
-var playIcon3 = document.querySelector(".play-btn3 i");
+var playBtn3 = document.getElementById("play-btn3");
+var playIcon3 = document.querySelector(".play-btn3");
+var slider3 = document.querySelector(".slider3");
 var song3 = document.querySelector(".audio3");
 var playState = "play";
 playBtn1.addEventListener("click", function () {
   if (playState === "play") {
-    playIcon1.classList.remove("fa-play");
-    playIcon1.classList.add("fa-pause");
+    playBtn1.classList.remove("fa-play");
+    playBtn1.classList.add("fa-pause");
     song1.play();
     playState = "pause";
   } else {
-    playIcon1.classList.remove("fa-pause");
-    playIcon1.classList.add("fa-play");
+    playBtn1.classList.remove("fa-pause");
+    playBtn1.classList.add("fa-play");
     song1.pause();
     playState = "play";
   }
 });
 playBtn2.addEventListener("click", function () {
   if (playState === "play") {
-    playIcon2.classList.remove("fa-play");
-    playIcon2.classList.add("fa-pause");
+    playBtn2.classList.remove("fa-play");
+    playBtn2.classList.add("fa-pause");
     song2.play();
     playState = "pause";
   } else {
-    playIcon2.classList.remove("fa-pause");
-    playIcon2.classList.add("fa-play");
+    playBtn2.classList.remove("fa-pause");
+    playBtn2.classList.add("fa-play");
     song2.pause();
     playState = "play";
   }
 });
 playBtn3.addEventListener("click", function () {
   if (playState === "play") {
-    playIcon3.classList.remove("fa-play");
-    playIcon3.classList.add("fa-pause");
+    playBtn3.classList.remove("fa-play");
+    playBtn3.classList.add("fa-pause");
     song3.play();
     playState = "pause";
   } else {
-    playIcon3.classList.remove("fa-pause");
-    playIcon3.classList.add("fa-play");
+    playBtn3.classList.remove("fa-pause");
+    playBtn3.classList.add("fa-play");
     song3.pause();
     playState = "play";
   }
+});
+slider1.addEventListener("change", function () {
+  song1.currentTime = slider1.value;
+});
+song1.addEventListener("timeupdate", function () {
+  slider1.value = song1.currentTime;
+});
+slider2.addEventListener("change", function () {
+  song2.currentTime = slider2.value;
+});
+song2.addEventListener("timeupdate", function () {
+  slider2.value = song2.currentTime;
+});
+slider3.addEventListener("change", function () {
+  song3.currentTime = slider3.value;
+});
+song3.addEventListener("timeupdate", function () {
+  slider3.value = song3.currentTime;
 });
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -195,7 +216,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50550" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52724" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
