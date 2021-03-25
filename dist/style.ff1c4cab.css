@@ -129,8 +129,8 @@ nav {
 }
 
 .menu.open {
-  clip-path: circle(1600px at 90% -10%);
-  -webkit-clip-path: circle(1600px at 90% -10%);
+  clip-path: circle(2400px at 90% -10%);
+  -webkit-clip-path: circle(2400px at 90% -10%);
   pointer-events: all;
 }
 
@@ -154,7 +154,7 @@ section {
   width: 600px;
 }
 .landing .landing-img {
-  flex: 1 1 40rem;
+  flex: 1 1 60rem;
   display: flex;
   justify-content: center;
 }
@@ -218,13 +218,13 @@ section {
 }
 .bio .bio-img {
   display: flex;
-  justify-content: center;
-  flex: 1 1 50rem;
+  flex: 1 1 40rem;
+  width: 100%;
 }
 .bio .bio-text {
   flex: 1 1 40rem;
-  max-width: 510px;
   margin: 3rem;
+  max-width: 50%;
 }
 .bio .bio-text h2 {
   margin-bottom: 1rem;
@@ -294,32 +294,137 @@ section {
 }
 
 footer {
-  color: #000000;
-  font-size: 1.2rem;
+  color: #d9d4d2;
+  font-size: 1rem;
   height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 footer a {
-  color: #000000;
-  font-size: 1.2rem;
+  color: #d9d4d2;
+  font-size: 1rem;
 }
 
-@keyframes blink {
-  0% {
-    fill: #ffdea9;
-    background-color: #ffdea9;
-  }
-  10% {
+@keyframes blink1 {
+  to {
+    background: #ff803c;
     fill: #ff803c;
-    background-color: #ff803c;
-  }
-  100% {
-    fill: #ff803c;
-    background-color: #ff803c;
   }
 }
+@keyframes blink2 {
+  to {
+    background: #bd5822;
+    fill: #bd5822;
+  }
+}
+@keyframes blink3 {
+  to {
+    fill: #ffce55;
+    background: #ffce55;
+  }
+}
+@keyframes ocean1 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+@keyframes ocean2 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-5px);
+  }
+}
+@keyframes sun1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px);
+    fill: #bd5822;
+  }
+}
+@keyframes sun2 {
+  from {
+    transform: translateY(15px);
+    fill: #bd5822;
+  }
+  to {
+    transform: translateY(30px);
+    fill: #8f2517;
+  }
+}
+@keyframes sun3 {
+  from {
+    transform: translateY(30px);
+    fill: #8f2517;
+  }
+  to {
+    transform: translateY(60px);
+    fill: #501007;
+  }
+}
+#square1 {
+  animation: blink1 5s steps(2, start) infinite;
+}
+
+#square2 {
+  animation: blink2 3s steps(2, start) infinite 3s;
+}
+
+#square3 {
+  animation: blink3 4s steps(2, start) infinite 2s;
+}
+
+#wave1 {
+  animation: ocean1 2s infinite alternate-reverse;
+}
+
+#wave2 {
+  animation: ocean2 2s infinite alternate-reverse 1s;
+}
+
+#wave3 {
+  animation: ocean1 2s infinite alternate-reverse;
+}
+
+#wave4 {
+  animation: ocean1 2s infinite alternate-reverse;
+}
+
+#wave5 {
+  animation: ocean2 2s infinite alternate-reverse 1s;
+}
+
+#wave6 {
+  animation: ocean1 2s infinite alternate-reverse;
+}
+
+#wave7 {
+  animation: ocean2 2s infinite alternate-reverse;
+}
+
+#sun.active1 {
+  animation: sun1 1s ease forwards;
+  transition: all 0.5s ease;
+}
+
+#sun.active2 {
+  animation: sun2 1s ease forwards;
+  transition: all 0.5s ease;
+}
+
+#sun.active3 {
+  animation: sun3 1s ease forwards;
+  transition: all 0.5s ease;
+}
+
 input[type=range] {
   -webkit-appearance: none;
   margin: 0;

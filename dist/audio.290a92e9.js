@@ -130,11 +130,13 @@ var playBtn3 = document.getElementById("play-btn3");
 var playIcon3 = document.querySelector(".play-btn3");
 var slider3 = document.querySelector(".slider3");
 var song3 = document.querySelector(".audio3");
+var sun = document.getElementById("sun");
 var playState = "play";
 playBtn1.addEventListener("click", function () {
   if (playState === "play") {
     playBtn1.classList.remove("fa-play");
     playBtn1.classList.add("fa-pause");
+    sun.classList.add("active1");
     song1.play();
     playState = "pause";
   } else {
@@ -148,6 +150,8 @@ playBtn2.addEventListener("click", function () {
   if (playState === "play") {
     playBtn2.classList.remove("fa-play");
     playBtn2.classList.add("fa-pause");
+    sun.classList.remove("active1");
+    sun.classList.add("active2");
     song2.play();
     playState = "pause";
   } else {
@@ -161,6 +165,8 @@ playBtn3.addEventListener("click", function () {
   if (playState === "play") {
     playBtn3.classList.remove("fa-play");
     playBtn3.classList.add("fa-pause");
+    sun.classList.remove("active2");
+    sun.classList.add("active3");
     song3.play();
     playState = "pause";
   } else {
@@ -216,7 +222,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52724" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54711" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

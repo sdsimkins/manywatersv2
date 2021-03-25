@@ -1,14 +1,111 @@
-@keyframes blink {
-  0% {
-    fill: $ctacolor;
-    background-color: $ctacolor;
-  }
-  10% {
+@keyframes blink1 {
+  to {
+    background: $orange;
     fill: $orange;
-    background-color: $orange;
   }
-  100% {
-    fill: $orange;
-    background-color: $orange;
+}
+
+@keyframes blink2 {
+  to {
+    background: #bd5822;
+    fill: #bd5822;
   }
+}
+@keyframes blink3 {
+  to {
+    fill: #ffce55;
+    background: #ffce55;
+  }
+}
+@keyframes ocean1 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+@keyframes ocean2 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-5px);
+  }
+}
+@keyframes sun1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px);
+    fill: #bd5822;
+  }
+}
+@keyframes sun2 {
+  from {
+    transform: translateY(15px);
+    fill: #bd5822;
+  }
+  to {
+    transform: translateY(30px);
+    fill: #8f2517;
+  }
+}
+
+@keyframes sun3 {
+  from {
+    transform: translateY(30px);
+    fill: #8f2517;
+  }
+  to {
+    transform: translateY(60px);
+    fill: #501007;
+  }
+}
+
+#square1 {
+  animation: blink1 5s steps(2, start) infinite;
+}
+
+#square2 {
+  animation: blink2 3s steps(2, start) infinite 3s;
+}
+#square3 {
+  animation: blink3 4s steps(2, start) infinite 2s;
+}
+
+#wave1 {
+  animation: ocean1 2s infinite alternate-reverse;
+}
+#wave2 {
+  animation: ocean2 2s infinite alternate-reverse 1s;
+}
+#wave3 {
+  animation: ocean1 2s infinite alternate-reverse;
+}
+#wave4 {
+  animation: ocean1 2s infinite alternate-reverse;
+}
+#wave5 {
+  animation: ocean2 2s infinite alternate-reverse 1s;
+}
+#wave6 {
+  animation: ocean1 2s infinite alternate-reverse;
+}
+#wave7 {
+  animation: ocean2 2s infinite alternate-reverse;
+}
+
+#sun.active1 {
+  animation: sun1 1s ease forwards;
+  transition: all 0.5s ease;
+}
+#sun.active2 {
+  animation: sun2 1s ease forwards;
+  transition: all 0.5s ease;
+}
+#sun.active3 {
+  animation: sun3 1s ease forwards;
+  transition: all 0.5s ease;
 }

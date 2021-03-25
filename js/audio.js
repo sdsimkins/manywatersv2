@@ -10,12 +10,14 @@ const playBtn3 = document.getElementById("play-btn3");
 const playIcon3 = document.querySelector(".play-btn3");
 const slider3 = document.querySelector(".slider3");
 const song3 = document.querySelector(".audio3");
+const sun = document.getElementById("sun");
 let playState = "play";
 
 playBtn1.addEventListener("click", ()=> {
     if(playState === "play"){
         playBtn1.classList.remove("fa-play"); 
         playBtn1.classList.add("fa-pause"); 
+        sun.classList.add("active1");
         song1.play();
         playState = "pause";
     } else {
@@ -29,6 +31,8 @@ playBtn2.addEventListener("click", ()=> {
     if(playState === "play"){
         playBtn2.classList.remove("fa-play"); 
         playBtn2.classList.add("fa-pause"); 
+        sun.classList.remove("active1")
+        sun.classList.add("active2");
         song2.play();
         playState = "pause";
     } else {
@@ -42,6 +46,8 @@ playBtn3.addEventListener("click", ()=> {
     if(playState === "play"){
         playBtn3.classList.remove("fa-play"); 
         playBtn3.classList.add("fa-pause"); 
+        sun.classList.remove("active2")
+        sun.classList.add("active3");
         song3.play();
         playState = "pause";
     } else {
