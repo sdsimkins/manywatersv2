@@ -136,6 +136,7 @@ playBtn1.addEventListener("click", function () {
   if (playState === "play") {
     playBtn1.classList.remove("fa-play");
     playBtn1.classList.add("fa-pause");
+    sun.classList.remove("active4");
     sun.classList.add("active1");
     song1.play();
     playState = "pause";
@@ -172,6 +173,8 @@ playBtn3.addEventListener("click", function () {
   } else {
     playBtn3.classList.remove("fa-pause");
     playBtn3.classList.add("fa-play");
+    sun.classList.remove("active3");
+    sun.classList.add("active4");
     song3.pause();
     playState = "play";
   }
@@ -222,7 +225,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54711" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57969" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

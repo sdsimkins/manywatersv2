@@ -154,7 +154,7 @@ section {
   width: 600px;
 }
 .landing .landing-img {
-  flex: 1 1 60rem;
+  flex: 1 1 50rem;
   display: flex;
   justify-content: center;
 }
@@ -170,6 +170,7 @@ section {
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
+  flex-wrap: wrap;
 }
 .audio-samples .audio-samples-img {
   flex: 1 1 40rem;
@@ -215,6 +216,7 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 .bio .bio-img {
   display: flex;
@@ -370,6 +372,16 @@ footer a {
     fill: #501007;
   }
 }
+@keyframes sun4 {
+  from {
+    transform: translateY(60px);
+    fill: #501007;
+  }
+  to {
+    transform: translateY(0px);
+    fill: #ffdea9;
+  }
+}
 #square1 {
   animation: blink1 5s steps(2, start) infinite;
 }
@@ -422,6 +434,11 @@ footer a {
 
 #sun.active3 {
   animation: sun3 1s ease forwards;
+  transition: all 0.5s ease;
+}
+
+#sun.active4 {
+  animation: sun4 1s ease forwards;
   transition: all 0.5s ease;
 }
 
@@ -507,6 +524,122 @@ input[type=range]:focus::-ms-fill-lower {
 
 input[type=range]:focus::-ms-fill-upper {
   background: #8c8c8c;
+}
+
+@media screen and (min-width: 1200px) {
+  .landing-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .landing-img {
+    display: none !important;
+  }
+
+  .landing-mobile {
+    flex: 1 1 50rem;
+    display: flex;
+    justify-content: center;
+  }
+  .landing-mobile svg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  section {
+    width: 90%;
+    margin: auto;
+  }
+
+  #logo {
+    font-size: 5rem;
+    margin-top: 3rem;
+  }
+
+  .burger {
+    top: 10%;
+    scale: 0.7;
+  }
+
+  .menu li a {
+    font-size: 5rem;
+  }
+
+  .landing-mobile svg {
+    padding: 0;
+    width: 90%;
+  }
+
+  .landing-text {
+    max-width: 95%;
+  }
+
+  .landing h1 {
+    font-size: 3.8rem;
+    width: 100% !important;
+  }
+
+  .landing h4 {
+    font-size: 2.1rem;
+    width: 100% !important;
+  }
+
+  .audio-samples-img {
+    display: flex;
+    justify-content: center;
+    height: 35rem;
+  }
+
+  .audio-samples-img svg {
+    width: 80%;
+  }
+
+  .audio-player {
+    height: 40rem !important;
+    margin-bottom: 10rem;
+  }
+
+  .track-wrapper h3 {
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 1rem 0rem;
+  }
+
+  .track {
+    width: 337px !important;
+    height: 3.8rem !important;
+  }
+
+  .fa-play,
+.fa-pause {
+    font-size: 2.5rem !important;
+  }
+
+  .slider {
+    width: 80% !important;
+  }
+
+  .bio-img img {
+    max-width: 90%;
+  }
+
+  .bio-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bio-text {
+    max-width: 90% !important;
+    margin: 3rem 0rem !important;
+  }
+
+  .book-button {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

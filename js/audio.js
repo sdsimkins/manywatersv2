@@ -17,6 +17,7 @@ playBtn1.addEventListener("click", ()=> {
     if(playState === "play"){
         playBtn1.classList.remove("fa-play"); 
         playBtn1.classList.add("fa-pause"); 
+        sun.classList.remove("active4");
         sun.classList.add("active1");
         song1.play();
         playState = "pause";
@@ -30,7 +31,7 @@ playBtn1.addEventListener("click", ()=> {
 playBtn2.addEventListener("click", ()=> {
     if(playState === "play"){
         playBtn2.classList.remove("fa-play"); 
-        playBtn2.classList.add("fa-pause"); 
+        playBtn2.classList.add("fa-pause");
         sun.classList.remove("active1")
         sun.classList.add("active2");
         song2.play();
@@ -52,7 +53,9 @@ playBtn3.addEventListener("click", ()=> {
         playState = "pause";
     } else {
         playBtn3.classList.remove("fa-pause"); 
-        playBtn3.classList.add("fa-play"); 
+        playBtn3.classList.add("fa-play");
+        sun.classList.remove("active3");
+        sun.classList.add("active4"); 
         song3.pause();
         playState = "play";
     }

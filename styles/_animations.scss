@@ -64,6 +64,17 @@
   }
 }
 
+@keyframes sun4 {
+  from {
+    transform: translateY(60px);
+    fill: #501007;
+  }
+  to {
+    transform: translateY(0px);
+    fill: #ffdea9;
+  }
+}
+
 #square1 {
   animation: blink1 5s steps(2, start) infinite;
 }
@@ -107,5 +118,9 @@
 }
 #sun.active3 {
   animation: sun3 1s ease forwards;
+  transition: all 0.5s ease;
+}
+#sun.active4 {
+  animation: sun4 1s ease forwards;
   transition: all 0.5s ease;
 }
