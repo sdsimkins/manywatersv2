@@ -8,16 +8,55 @@
   .landing-img {
     display: none !important;
   }
+
   .landing-mobile {
     flex: 1 1 50rem;
     display: flex;
     justify-content: center;
     svg {
-      width: 80%;
-      height: 100%;
+      width: 60%;
+      height: 50%;
       object-fit: cover;
       padding: 3rem;
     }
+  }
+  .landing-text {
+    margin: 0rem 10rem;
+  }
+  .landing h1 {
+    width: 100% !important;
+  }
+  .landing h4 {
+    width: 100% !important;
+  }
+  .audio-samples-img {
+    display: flex;
+    justify-content: center;
+    height: 40rem;
+  }
+  .audio-samples-img svg {
+    width: 80%;
+  }
+  .audio-player {
+    height: 45rem !important;
+  }
+  .audio-player h3 {
+    padding: 2rem 0rem;
+  }
+  .track {
+    width: 437px !important;
+    height: 4rem !important;
+  }
+
+  .fa-play,
+  .fa-pause {
+    font-size: 2.5rem !important;
+  }
+  .slider {
+    width: 80% !important;
+  }
+  .bio-img img {
+    max-width: 90%;
   }
 }
 
@@ -43,6 +82,7 @@
   }
   .landing-text {
     max-width: 95%;
+    margin: 0;
   }
   .landing h1 {
     font-size: 3.8rem;
@@ -51,6 +91,7 @@
   .landing h4 {
     font-size: 2.1rem;
     width: 100% !important;
+    line-height: 3.15rem;
   }
   .audio-samples-img {
     display: flex;
@@ -90,8 +131,11 @@
     justify-content: center;
   }
   .bio-text {
-    max-width: 90% !important;
+    max-width: 100% !important;
     margin: 3rem 0rem !important;
+  }
+  .bio-text h2 {
+    font-size: 3.8rem;
   }
   .book-button {
     display: flex;
