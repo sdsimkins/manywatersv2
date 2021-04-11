@@ -2,11 +2,12 @@ nav {
   min-height: 8vh;
   display: flex;
   justify-content: center;
-  padding: 1rem;
   position: sticky;
+  transition: all 0.3s ease;
   top: 0;
   background: $bgcolor;
   z-index: 1;
+  width: 100%;
 }
 
 .burger {
@@ -24,6 +25,7 @@ nav {
   div {
     transition: all 0.5s ease;
   }
+  z-index: 2;
 }
 
 .burger-open {
@@ -216,6 +218,12 @@ section {
       font-size: 1.6rem;
       color: $textcolor;
       width: 100%;
+    }
+    input:focus {
+      outline: none;
+    }
+    textarea:focus {
+      outline: none;
     }
     button {
       width: 100%;
