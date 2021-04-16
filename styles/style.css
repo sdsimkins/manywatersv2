@@ -15,6 +15,7 @@ body {
   background-color: #2d2d2d;
   color: #d9d4d2;
   position: relative;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -196,8 +197,8 @@ section {
 
 .landing .landing-img {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50rem;
-          flex: 1 1 50rem;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,16 +793,6 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 @media screen and (max-width: 1300px) {
-  .landing {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
-  }
-  .landing-text h1,
-  .landing-text h4 {
-    width: 650px !important;
-  }
   .audio-samples-img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -837,6 +828,16 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 @media screen and (max-width: 1000px) {
+  .landing {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .landing-text h1,
+  .landing-text h4 {
+    width: 650px !important;
+  }
   section {
     width: 90%;
     margin: auto;

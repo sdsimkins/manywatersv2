@@ -1,12 +1,4 @@
 @media screen and (max-width: 1300px) {
-  .landing {
-    flex-direction: column-reverse !important;
-  }
-
-  .landing-text h1,
-  .landing-text h4 {
-    width: 650px !important;
-  }
   .audio-samples-img {
     display: flex;
     justify-content: center;
@@ -39,6 +31,13 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .landing {
+    flex-direction: column-reverse !important;
+  }
+  .landing-text h1,
+  .landing-text h4 {
+    width: 650px !important;
+  }
   section {
     width: 90%;
     margin: auto;

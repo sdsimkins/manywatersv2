@@ -1,11 +1,40 @@
-const controller = new ScrollMagic.Controller();
+const logo = document.getElementById("logo");
+const tlOpen = gsap.timeline();
+const tlLanding = gsap.timeline();
 
-const scene1 = new ScrollMagic.Scene({
-    triggerElement: ".landing",
-    duration: $(window).height() - 100, 
-    triggerHook: 0,
-    reverse: true
-})
-    .setPin(".landing")
-    .addIndicators({name: "1 (duration: 1000"})
-controller.addScene(scene1);
+tlOpen
+.from(logo, {duration: 1, fontSize: 98, y: "150%", delay: 2})
+.from(".landing-text", {duration: 1, x: "-100vw"})
+.from(".landing-img", {duration: 1, x:"100vw"}, "-=0.5")
+.from(".burger", {duration: 1, opacity: 0});
+
+
+const landingAni = tlLanding
+.to(".landing-text", {duraction: 2, x: "-100vw"});
+
+ScrollTrigger.create({
+     trigger: ".landing",
+     start: "top top",
+     end: "100%",
+     pin: true,
+     markers: true,
+});
+
+ScrollTrigger.create({
+    trigger: ".audio-samples",
+    start: "top top",
+    end: "100%",
+    pin: true,
+    markers: true,
+});
+
+
+ScrollTrigger.create({
+    trigger: ".bio",
+    start: "top top",
+    end: "100%",
+    pin: true,
+    markers: true,
+});
+
+
