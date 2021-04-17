@@ -1,40 +1,54 @@
 const logo = document.getElementById("logo");
 const tlOpen = gsap.timeline();
-const tlLanding = gsap.timeline();
 
 tlOpen
-.from(logo, {duration: 1, fontSize: 98, y: "150%", delay: 2})
+.from(logo, {duration: 1, scale: 2, y: "40vh", delay: 2})
 .from(".landing-text", {duration: 1, x: "-100vw"})
 .from(".landing-img", {duration: 1, x:"100vw"}, "-=0.5")
 .from(".burger", {duration: 1, opacity: 0});
 
-
-const landingAni = tlLanding
-.to(".landing-text", {duraction: 2, x: "-100vw"});
-
-ScrollTrigger.create({
-     trigger: ".landing",
-     start: "top top",
-     end: "100%",
-     pin: true,
-     markers: true,
+const tlLanding = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".landing",
+        start: "5% top",
+        pin: true, 
+        end: "+=500",
+        scrub: 1,
+        snap: 0.7, 
+        anticipatePin: 1,
+        markers: true, 
+        pinSpacing: false,
+    }
 });
+tlLanding
+.to(".landing", {opacity: 0, scale: 0});
 
-ScrollTrigger.create({
-    trigger: ".audio-samples",
-    start: "top top",
-    end: "100%",
-    pin: true,
-    markers: true,
+const tlAudio = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".audio-samples",
+        start: "5% top",
+        pin: true, 
+        end: "+=500",
+        scrub: 1,
+        snap: 0.7,
+        anticipatePin: 1,
+        pinSpacing: false,
+    }
 });
+tlAudio
+.to(".audio-samples", {opacity: 0, scale: 0},);
 
-
-ScrollTrigger.create({
-    trigger: ".bio",
-    start: "top top",
-    end: "100%",
-    pin: true,
-    markers: true,
+const tlBio = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".bio",
+        start: "5% top",
+        pin: true, 
+        end: "+=500",
+        scrub: 1,
+        snap: 0.7,
+        anticipatePin: 1,
+        pinSpacing: false
+    }
 });
-
-
+tlBio
+.to(".bio", {opacity: 0, scale: 0});
