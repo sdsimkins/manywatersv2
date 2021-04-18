@@ -12,11 +12,9 @@ const tlLanding = gsap.timeline({
         trigger: ".landing",
         start: "5% top",
         pin: true, 
-        end: "+=500",
+        end: "90%",
         scrub: 1,
-        snap: 0.7, 
         anticipatePin: 1,
-        markers: true, 
         pinSpacing: false,
     }
 });
@@ -28,9 +26,8 @@ const tlAudio = gsap.timeline({
         trigger: ".audio-samples",
         start: "5% top",
         pin: true, 
-        end: "+=500",
+        end: "140%",
         scrub: 1,
-        snap: 0.7,
         anticipatePin: 1,
         pinSpacing: false,
     }
@@ -43,9 +40,8 @@ const tlBio = gsap.timeline({
         trigger: ".bio",
         start: "5% top",
         pin: true, 
-        end: "+=500",
+        end: "90%",
         scrub: 1,
-        snap: 0.7,
         anticipatePin: 1,
         pinSpacing: false
     }
