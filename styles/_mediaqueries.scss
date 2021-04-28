@@ -1,190 +1,38 @@
-@media screen and (max-width: 1300px) {
-  .audio-samples-img {
-    display: flex;
-    justify-content: center;
-    height: 40rem;
-  }
-  .audio-samples-img svg {
-    width: 80%;
-  }
-  .audio-player {
-    height: 45rem !important;
-  }
-  .audio-player h3 {
-    padding: 2rem 0rem;
-  }
-  .track {
-    width: 437px !important;
-    height: 4rem !important;
-  }
-
-  .fa-play,
-  .fa-pause {
-    font-size: 2.5rem !important;
-  }
-  .slider {
-    width: 80% !important;
-  }
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .landing {
-    flex-direction: column-reverse !important;
-  }
-  .landing-text h1,
-  .landing-text h4 {
-    width: 650px !important;
-  }
-  section {
-    width: 90%;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 950px) {
-  .landing-text {
-    margin: 0rem 5rem;
-  }
-  .audio-samples-img {
-    display: flex;
-    justify-content: center;
-    height: 40rem;
-  }
-  .audio-samples {
-    flex-direction: column;
-    margin: 5rem auto;
-  }
-  .audio-samples-img svg {
-    width: 80%;
-  }
-  .audio-player {
-    height: 45rem !important;
-  }
-  .audio-player h3 {
-    padding: 2rem 0rem;
-  }
-  .track {
-    width: 437px !important;
-    height: 4rem !important;
+    flex-direction: column-reverse;
+    .landing-text h1 h4 {
+      width: 50%;
+    }
   }
 
-  .fa-play,
-  .fa-pause {
-    font-size: 2.5rem !important;
-  }
-  .slider {
-    width: 80% !important;
+  .audio-samples {
+    flex-direction: column;
   }
   .bio {
     flex-direction: column;
   }
   .bio-img {
-    justify-content: center;
-  }
-  .bio-text {
-    max-width: 70% !important;
-    margin: 3rem 0rem !important;
-  }
-  .bio-text h2 {
-    font-size: 3.8rem;
-  }
-  .book-button {
-    display: flex;
-    justify-content: center;
+    width: 40%;
   }
 }
 
-@media screen and (max-width: 470px) {
-  section {
-    width: 90%;
-    margin: auto;
+@media screen and (max-width: 800px) {
+  .landing {
+    flex-direction: column-reverse;
+    .landing-text h1 h4 {
+      width: 80%;
+    }
   }
-  #logo {
-    font-size: 3rem;
-    font-weight: 400;
-    margin: 1rem;
-  }
-  .burger {
-    top: 10%;
-    scale: 0.7;
-  }
-  .menu li a {
-    font-size: 5rem;
-  }
-  .menu.open {
-    clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -10%);
-    pointer-events: all;
-  }
-  .landing-text {
-    max-width: 95%;
-    margin: 0;
-    flex: 1 1 30rem !important;
-  }
-  .landing h1 {
-    font-size: 3.8rem;
-    width: 100% !important;
-  }
-  .landing h4 {
-    font-size: 2.1rem;
-    width: 100% !important;
-    line-height: 3.15rem;
-  }
-  .landing-img {
-    flex: 1 1 40rem !important;
-  }
-  .landing-img svg {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-  .audio-samples {
-    min-height: 100vh;
-  }
-  .audio-samples-img {
-    display: flex;
-    justify-content: center;
-  }
-  .audio-samples-img svg {
+  .bio-img {
     width: 80%;
-  }
-  .audio-player {
-    height: 40rem !important;
-    margin-bottom: 10rem;
-  }
-  .track-wrapper h3 {
-    font-size: 2.8rem;
-    text-align: center;
-    padding: 1rem 0rem;
-  }
-  .track {
-    width: 337px !important;
-    height: 3.8rem !important;
-  }
-
-  .fa-play,
-  .fa-pause {
-    font-size: 2.5rem !important;
-  }
-  .slider {
-    width: 80% !important;
   }
   .bio {
-    flex-wrap: wrap;
+    .bio-text {
+      width: 80%;
+    }
   }
+}
 
-  .bio-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-  }
-  .bio-text {
-    max-width: 100% !important;
-    margin: 3rem 0rem !important;
-  }
-  .bio-text h2 {
-    font-size: 3.8rem;
-  }
-  .book-button {
-    display: none;
-  }
+@media screen and (max-width: 600px) {
 }

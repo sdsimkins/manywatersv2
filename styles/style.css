@@ -170,7 +170,7 @@ nav.open {
 
 section {
   min-height: 92vh;
-  width: 85%;
+  width: 90%;
   margin: auto;
 }
 
@@ -184,14 +184,11 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .landing .landing-text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .landing .landing-text h1,
@@ -200,9 +197,8 @@ section {
 }
 
 .landing .landing-img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,21 +226,17 @@ section {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .audio-samples .audio-samples-img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .audio-samples .audio-player {
   height: 600px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,14 +295,14 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .bio .bio-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .bio .bio-img img {
@@ -321,12 +313,11 @@ section {
 }
 
 .bio .bio-text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin: 3rem;
   margin-left: 4rem;
-  max-width: 50%;
+  width: 50%;
 }
 
 .bio .bio-text h2 {
@@ -799,94 +790,21 @@ input[type="range"]:focus::-ms-fill-upper {
   background: #8c8c8c;
 }
 
-@media screen and (max-width: 1300px) {
-  .audio-samples-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 40rem;
-  }
-  .audio-samples-img svg {
-    width: 80%;
-  }
-  .audio-player {
-    height: 45rem !important;
-  }
-  .audio-player h3 {
-    padding: 2rem 0rem;
-  }
-  .track {
-    width: 437px !important;
-    height: 4rem !important;
-  }
-  .fa-play,
-  .fa-pause {
-    font-size: 2.5rem !important;
-  }
-  .slider {
-    width: 80% !important;
-  }
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .landing {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-  .landing-text h1,
-  .landing-text h4 {
-    width: 650px !important;
-  }
-  section {
-    width: 90%;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .landing-text {
-    margin: 0rem 5rem;
-  }
-  .audio-samples-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 40rem;
+  .landing .landing-text h1 h4 {
+    width: 50%;
   }
   .audio-samples {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 5rem auto;
-  }
-  .audio-samples-img svg {
-    width: 80%;
-  }
-  .audio-player {
-    height: 45rem !important;
-  }
-  .audio-player h3 {
-    padding: 2rem 0rem;
-  }
-  .track {
-    width: 437px !important;
-    height: 4rem !important;
-  }
-  .fa-play,
-  .fa-pause {
-    font-size: 2.5rem !important;
-  }
-  .slider {
-    width: 80% !important;
   }
   .bio {
     -webkit-box-orient: vertical;
@@ -895,133 +813,25 @@ input[type="range"]:focus::-ms-fill-upper {
             flex-direction: column;
   }
   .bio-img {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .bio-text {
-    max-width: 70% !important;
-    margin: 3rem 0rem !important;
-  }
-  .bio-text h2 {
-    font-size: 3.8rem;
-  }
-  .book-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 40%;
   }
 }
 
-@media screen and (max-width: 470px) {
-  section {
-    width: 90%;
-    margin: auto;
+@media screen and (max-width: 800px) {
+  .landing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-  #logo {
-    font-size: 3rem;
-    font-weight: 400;
-    margin: 1rem;
-  }
-  .burger {
-    top: 10%;
-    scale: 0.7;
-  }
-  .menu li a {
-    font-size: 5rem;
-  }
-  .menu.open {
-    clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -10%);
-    pointer-events: all;
-  }
-  .landing-text {
-    max-width: 95%;
-    margin: 0;
-    -webkit-box-flex: 1 !important;
-        -ms-flex: 1 1 30rem !important;
-            flex: 1 1 30rem !important;
-  }
-  .landing h1 {
-    font-size: 3.8rem;
-    width: 100% !important;
-  }
-  .landing h4 {
-    font-size: 2.1rem;
-    width: 100% !important;
-    line-height: 3.15rem;
-  }
-  .landing-img {
-    -webkit-box-flex: 1 !important;
-        -ms-flex: 1 1 40rem !important;
-            flex: 1 1 40rem !important;
-  }
-  .landing-img svg {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-  .audio-samples {
-    min-height: 100vh;
-  }
-  .audio-samples-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .audio-samples-img svg {
+  .landing .landing-text h1 h4 {
     width: 80%;
-  }
-  .audio-player {
-    height: 40rem !important;
-    margin-bottom: 10rem;
-  }
-  .track-wrapper h3 {
-    font-size: 2.8rem;
-    text-align: center;
-    padding: 1rem 0rem;
-  }
-  .track {
-    width: 337px !important;
-    height: 3.8rem !important;
-  }
-  .fa-play,
-  .fa-pause {
-    font-size: 2.5rem !important;
-  }
-  .slider {
-    width: 80% !important;
-  }
-  .bio {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .bio-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 80%;
   }
-  .bio-text {
-    max-width: 100% !important;
-    margin: 3rem 0rem !important;
-  }
-  .bio-text h2 {
-    font-size: 3.8rem;
-  }
-  .book-button {
-    display: none;
+  .bio .bio-text {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
