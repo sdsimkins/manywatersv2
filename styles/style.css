@@ -208,7 +208,7 @@ section {
 }
 
 .landing .landing-img svg {
-  width: 80%;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -832,6 +832,53 @@ input[type="range"]:focus::-ms-fill-upper {
   }
   .bio .bio-text {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing-text {
+    width: 100%;
+  }
+  .landing-text h1 {
+    font-size: 5rem;
+  }
+  .landing-text h4 {
+    font-size: 2.1rem;
+    width: 100% !important;
+  }
+  #logo {
+    font-size: 3.8rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .audio-samples-img {
+    -ms-flex-preferred-size: 40% !important;
+        flex-basis: 40% !important;
+  }
+  .audio-player {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .landing .landing-text h1,
+  .landing .landing-text h4 {
+    width: 100%;
+  }
+  .audio-samples-img svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .audio-samples-img {
+    padding: 0rem 2rem;
+  }
+  .audio-player {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 /*# sourceMappingURL=style.css.map */

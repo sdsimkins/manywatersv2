@@ -35,4 +35,46 @@
 }
 
 @media screen and (max-width: 600px) {
+  .landing-text {
+    width: 100%;
+  }
+  .landing-text h1 {
+    font-size: 5rem;
+  }
+  .landing-text h4 {
+    font-size: 2.1rem;
+    width: 100% !important;
+  }
+  #logo {
+    font-size: 3.8rem;
+    align-self: center;
+  }
+  .audio-samples-img {
+    flex-basis: 40% !important;
+  }
+  .audio-player {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .landing {
+    .landing-text {
+      h1,
+      h4 {
+        width: 100%;
+      }
+    }
+  }
+  .audio-samples-img svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .audio-samples-img {
+    padding: 0rem 2rem;
+  }
+  .audio-player {
+    transform: scale(0.7);
+  }
 }
