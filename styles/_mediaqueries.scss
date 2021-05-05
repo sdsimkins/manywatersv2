@@ -94,9 +94,10 @@
   }
   .audio-samples {
     align-content: center !important;
+    min-height: 78vh !important;
   }
   .audio-player {
-    transform: scale(0.6);
+    transform: scale(0.57);
     flex-basis: 60% !important;
   }
   .bio-img {

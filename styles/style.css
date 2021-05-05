@@ -898,10 +898,11 @@ input[type="range"]:focus::-ms-fill-upper {
   .audio-samples {
     -ms-flex-line-pack: center !important;
         align-content: center !important;
+    min-height: 78vh !important;
   }
   .audio-player {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.57);
+            transform: scale(0.57);
     -ms-flex-preferred-size: 60% !important;
         flex-basis: 60% !important;
   }
