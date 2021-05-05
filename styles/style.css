@@ -234,6 +234,7 @@ section {
 }
 
 .audio-samples .audio-player {
+  margin: 3rem;
   height: 600px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -806,6 +807,9 @@ input[type="range"]:focus::-ms-fill-upper {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .audio-player {
+    margin: 0;
+  }
   .bio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -813,11 +817,14 @@ input[type="range"]:focus::-ms-fill-upper {
             flex-direction: column;
   }
   .bio-img {
-    width: 40%;
+    width: 60%;
+  }
+  .bio .bio-text {
+    width: 70%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .landing {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

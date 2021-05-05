@@ -9,15 +9,23 @@
   .audio-samples {
     flex-direction: column;
   }
+  .audio-player {
+    margin: 0;
+  }
   .bio {
     flex-direction: column;
   }
   .bio-img {
-    width: 40%;
+    width: 60%;
+  }
+  .bio {
+    .bio-text {
+      width: 70%;
+    }
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .landing {
     flex-direction: column-reverse;
     .landing-text h1 h4 {
