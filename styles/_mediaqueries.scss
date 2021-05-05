@@ -80,6 +80,9 @@
 }
 
 @media screen and (max-width: 440px) {
+  section {
+    min-height: 88vh;
+  }
   #logo {
     font-size: 3rem;
   }
@@ -90,7 +93,7 @@
     line-height: 3.15rem;
   }
   .audio-samples {
-    justify-content: center !important;
+    align-content: center !important;
   }
   .audio-player {
     transform: scale(0.6);

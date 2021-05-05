@@ -883,6 +883,9 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 @media screen and (max-width: 440px) {
+  section {
+    min-height: 88vh;
+  }
   #logo {
     font-size: 3rem;
   }
@@ -893,9 +896,8 @@ input[type="range"]:focus::-ms-fill-upper {
     line-height: 3.15rem;
   }
   .audio-samples {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    -ms-flex-line-pack: center !important;
+        align-content: center !important;
   }
   .audio-player {
     -webkit-transform: scale(0.6);
