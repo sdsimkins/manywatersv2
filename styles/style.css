@@ -881,4 +881,45 @@ input[type="range"]:focus::-ms-fill-upper {
             transform: scale(0.7);
   }
 }
+
+@media screen and (max-width: 440px) {
+  #logo {
+    font-size: 3rem;
+  }
+  .landing-text h1 {
+    font-size: 3.8rem;
+  }
+  .landing-text h4 {
+    line-height: 3.15rem;
+  }
+  .audio-samples {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .audio-player {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -ms-flex-preferred-size: 60% !important;
+        flex-basis: 60% !important;
+  }
+  .bio-img {
+    width: 90%;
+  }
+  .bio .bio-text {
+    margin: 3rem 0rem;
+    width: 100%;
+  }
+  .bio .bio-text h2 {
+    font-size: 3.8rem;
+  }
+  .book-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
