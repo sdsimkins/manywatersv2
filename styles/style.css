@@ -807,7 +807,7 @@ input[type="range"]:focus::-ms-fill-upper {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .audio-player {
+  .audio-samples .audio-player {
     margin: 0;
   }
   .bio {
@@ -910,8 +910,9 @@ input[type="range"]:focus::-ms-fill-upper {
   .audio-player {
     -webkit-transform: scale(0.57);
             transform: scale(0.57);
-    -ms-flex-preferred-size: 60% !important;
-        flex-basis: 60% !important;
+  }
+  .track-wrapper {
+    padding: 2rem 0rem;
   }
   .bio-img {
     width: 90%;
@@ -930,6 +931,48 @@ input[type="range"]:focus::-ms-fill-upper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .burger {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .menu li a {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  section {
+    min-height: 92vh !important;
+  }
+  .burger {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    top: 8%;
+    right: 0%;
+  }
+  #logo {
+    font-size: 2.6em;
+  }
+  .landing-text h1 {
+    font-size: 2.8rem;
+  }
+  .landing-text h4 {
+    font-size: 1.6rem;
+  }
+  .audio-player {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+  }
+  .audio-samples-img {
+    margin-bottom: -30%;
+  }
+  .bio-text h2 {
+    font-size: 2.8rem;
+  }
+  .bio-text p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
